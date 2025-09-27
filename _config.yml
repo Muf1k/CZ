@@ -34,12 +34,13 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-instagram: myinstagram
-linkedin: mylinkedin
+facebook: 
+twitter: 
+instagram: nedebilni_videacz
+linkedin: 
 github: Muf1k
-email: myemail@gmail.com
+email:
+youtube: NEDEBILNIVIDEAGROUP
 
 authors:
   johndoe:
