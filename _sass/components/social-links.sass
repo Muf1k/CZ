@@ -1,8 +1,9 @@
 .social-links
     display: flex
-    gap: 8px         
+    gap: 8px
     align-items: center
     flex-wrap: nowrap
+
 
     > .link
         margin: 0
@@ -11,14 +12,18 @@
         display: inline-flex   
         align-items: center
         justify-content: center
-        flex: 0 0 auto          
+        vertical-align: middle
+        flex: 0 0 auto
         height: 35px
         width: 35px
         color: $zeta
+        float: none            
 
         &:hover
             > svg
                 color: $delta
 
-    > svg
+    
+    svg
         transition: all ease-in-out .2s
+        display: block          
