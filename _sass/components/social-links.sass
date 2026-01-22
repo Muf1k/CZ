@@ -3,9 +3,13 @@
     flex-direction: row
     align-items: center
     justify-content: center
-    gap: 10px
-    margin-top: 12px
-    flex-wrap: wrap
+    gap: 12px                 // tighter spacing
+    margin-top: 8px           // reduce vertical gap from above
+    padding: 0
+    max-width: 360px          // keep icons from stretching wide on large screens
+    margin-left: auto
+    margin-right: auto
+    flex-wrap: nowrap         // keep them on one line (allow wrap if you prefer)
 
     > .link
         margin: 0
@@ -14,14 +18,21 @@
         display: inline-flex
         align-items: center
         justify-content: center
-        height: 35px
-        width: 35px
+        height: 36px
+        width: 36px
+        border-radius: 50%    // circular hit area
+        background: transparent
         color: $zeta
+        transition: transform .18s ease, box-shadow .18s ease
 
         &:hover
-            > svg, > i
-                color: $delta
+            transform: translateY(-4px)   // subtle lift on hover
+            box-shadow: 0 6px 14px rgba(0,0,0,0.15)
+
+        &:active
+            transform: translateY(-1px)
 
     > svg, > i
-        transition: all ease-in-out .2s
+        transition: color .18s ease
         font-size: 18px
+        line-height: 1
