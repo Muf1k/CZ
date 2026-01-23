@@ -1,15 +1,17 @@
 .social-links
     display: flex
-    flex-direction: row
+    flex-flow: row nowrap           
     align-items: center
     justify-content: center
-    gap: 12px                
-    margin-top: 8px           
+    gap: 12px
+    margin-top: 8px
     padding: 0
-    max-width: 360px          
+    width: 100%                   
+    max-width: none                
     margin-left: auto
     margin-right: auto
-    flex-wrap: nowrap         
+    overflow-x: auto                
+    -webkit-overflow-scrolling: touch
 
     > .link
         margin: 0
@@ -20,19 +22,21 @@
         justify-content: center
         height: 36px
         width: 36px
-        border-radius: 50%    // circular hit area
+        border-radius: 50%    
         background: transparent
         color: $zeta
         transition: transform .18s ease, box-shadow .18s ease
+        flex: 0 0 auto        
 
         &:hover
-            transform: translateY(-4px)   // subtle lift on hover
+            transform: translateY(-4px)   
             box-shadow: 0 6px 14px rgba(0,0,0,0.15)
 
         &:active
             transform: translateY(-1px)
 
-    > svg, > i
+    
+    > .link > svg, > .link > i
         transition: color .18s ease
         font-size: 18px
         line-height: 1
