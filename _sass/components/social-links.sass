@@ -1,26 +1,21 @@
 .social-links
     display: flex
     flex-wrap: nowrap
-    align-items: center
     justify-content: center
-    gap: 12px
+    align-items: center
+    gap: clamp(6px, 1vw, 12px)
 
     > .link
         display: flex
         align-items: center
         justify-content: center
-        width: 36px
-        height: 36px
-        margin: 0
-        padding: 0
+        width: clamp(28px, 4vw, 36px)
+        height: clamp(28px, 4vw, 36px)
         border-radius: 50%
-        text-decoration: none
-        background: transparent
-        color: $zeta
         flex: 0 0 auto
 
         > i
             display: block
+            font-size: clamp(14px, 2.5vw, 18px)
             line-height: 1
-            font-size: 18px
             vertical-align: middle
