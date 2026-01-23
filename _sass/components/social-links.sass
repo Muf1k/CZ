@@ -1,30 +1,25 @@
-.social-links
-    display: flex
-    flex-direction: row
-    flex-wrap: nowrap            
-    align-items: center
-    justify-content: center
-    gap: 12px
-    margin-top: 8px
-    padding: 0
-    max-width: none
-    margin-left: auto
-    margin-right: auto
+.social-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
 
-    > .link
-        margin: 0
-        text-decoration: none
-        position: relative
-        display: inline-flex
-        align-items: center
-        justify-content: center
-        height: 36px
-        width: 36px
-        border-radius: 50%    
-        background: transparent
-        color: $zeta
-        flex: 0 0 auto        
+.social-links > .link {
+    display: flex;             
+    align-items: center;       
+    justify-content: center;   
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    text-decoration: none;
+}
 
-    > .link > svg, > .link > i
-        font-size: 18px
-        line-height: 1
+.social-links > .link svg,
+.social-links > .link i {
+    display: block;             
+    line-height: 1;           
+    font-size: 18px;
+}
